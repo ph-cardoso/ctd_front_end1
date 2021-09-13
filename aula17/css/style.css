@@ -1,0 +1,92 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+.ball {
+    width: 10rem;
+    height: 10rem;
+    margin-top: 8rem;
+    margin-left: auto;
+    background-color: blue;
+    border-radius: 50%;
+    animation: ball-loop 1.5s infinite;
+}
+
+.icon-container {
+    margin-top: 8rem;
+    width: 100%;
+    text-align: center;
+}
+
+.icon {
+    width: 12rem;
+    transition: all 0.5s ease-in-out;
+    animation: icon-loop 1.5s;
+}
+
+.icon:hover{
+    filter: saturate(150%);
+    transform: scale(1.2);
+}
+
+.button-container {
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button{
+    width: max-content;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    background-color: #993399;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover{
+    transform: scale(1.1);
+    background-color: #81e0cc;
+    color: black;
+    cursor: pointer;
+}
+
+@keyframes icon-loop {
+    0%{
+        transform: translateX(-100%) rotate(180deg) scale(1);
+    }
+    50%{
+        transform: rotate(360deg) scale(0.2);
+    }
+    100%{
+        transform: translateX(0) rotate(0) scale(1);
+    }
+}
+
+@keyframes ball-loop {
+    0%{
+        margin-left: 0;
+        filter: hue-rotate(0);
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    40%{
+        opacity: 0.4;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    80%{
+        opacity: 0.8;
+    }
+    100%{
+        margin-left: 100%;
+        filter: hue-rotate(360deg);
+        opacity: 1;
+    }
+}
