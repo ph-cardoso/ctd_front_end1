@@ -24,6 +24,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.container {
+    width: max-content;
+    background-color: var(--container-bg);
+    padding: 2rem 8rem;
+    border-radius: 2rem;
+}
+
 h1 {
     font-size: 2rem;
     font-weight: bold;
@@ -59,11 +66,4 @@ a {
 .nav-item:hover {
     transform: scale(1.2);
     background-color: var(--item-bg-hover);
-}
-
-.container {
-    width: max-content;
-    background-color: var(--container-bg);
-    padding: 2rem 8rem;
-    border-radius: 2rem;
 }
