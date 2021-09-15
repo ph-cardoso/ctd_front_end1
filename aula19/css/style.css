@@ -2,11 +2,11 @@
 
 *,
 *::after,
-*::before{
+*::before {
     box-sizing: border-box;
 }
 
-:root{
+:root {
     --background: #01090c;
     --text-color: #f8f9fa;
     --text-clicks: gray;
@@ -21,7 +21,7 @@ body {
 h1 {
     text-align: center;
     font-size: 36px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     font-weight: bold;
 }
 
@@ -48,6 +48,13 @@ h2, h3 {
 .item img {
     width: 500px;
     height: 300px;
+    transition: all 300ms ease-in-out;
+    border-radius: 20px;
+    filter: brightness(0.6);
+}
+
+.item img:hover {
+    filter: brightness(1.1);
 }
 
 .item h2 {
