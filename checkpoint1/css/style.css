@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:wght@300;400&display=swap');
+
+*,
+*::after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --banner-color: rgba(255,255,255,1);
+    --text-color: #262626;
+    --bg-color: rgba(255,255,255,1);
+    --bg-color-mobile: #303030;
+}
+
+body {
+    background-color: var(--bg-color-mobile);
+}
+
+.header-banner {
+    width: 100%;
+    background: var(--banner-color);
+}
+
+.header-banner h1 {
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    color: var(--text-color);
+}
+
+.outer-container {
+    width: 100%;
+    padding: 1.5rem 1rem;
+}
+
+.inner-container {
+    background-color: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.about-text {
+    line-height: 1.5rem;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.about-text h2 {
+    text-align: center;
+}
+
+.about-text p {
+    padding: 1rem 0;
+}
+
+.about-text span {
+    font-weight: bold;    
+}
+
+.yt-video {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.curiosidades-list li {
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.curiosidades h2 {
+    padding-bottom: 0.6rem;
+    text-align: center;
+
+}
+
+.social-media h2 {
+    text-align: center;
+    padding: 1.4rem 0;
+}
+
+.media-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.media-container img {
+    width: 3rem;
+}
+
+.media-container img:hover {
+    transition: all 200ms ease-in-out;
+    transform: scale(1.2);
+}
