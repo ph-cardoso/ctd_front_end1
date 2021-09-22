@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Roboto:wght@300;400&display=swap");
 
-:root{
-    --banner-color: linear-gradient(90deg, rgba(230,230,230,1) 0%, rgba(236,236,236,1) 100%);
+:root {
+    --banner-color: linear-gradient(
+        90deg,
+        rgba(230, 230, 230, 1) 0%,
+        rgba(236, 236, 236, 1) 100%
+    );
     --text-color: #262626;
-    --bg-color: rgba(255,255,255,0.90)
+    --bg-color: rgba(255, 255, 255, 0.9);
 }
 
 * {
@@ -28,24 +32,24 @@ body {
 
 h1 {
     text-align: center;
-    font-family: 'Kalam', cursive;
+    font-family: "Kalam", cursive;
     font-size: 54px;
     color: var(--text-color);
 }
 
 span {
-    font-weight: bold;    
+    font-weight: bold;
 }
 
 .main-container {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding: 100px 250px;    
+    padding: 100px 250px;
 }
 
 h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     text-align: center;
     font-size: 30px;
 }
@@ -58,7 +62,7 @@ h2 {
 }
 
 .about-text {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 26px;
     color: var(--text-color);
@@ -72,7 +76,7 @@ h2 {
 }
 
 .curiosidades-list {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 18px;
     line-height: 30px;
     padding: 10px 80px;
@@ -87,6 +91,6 @@ h2 {
 }
 
 .social-media img:hover {
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     transform: scale(1.3);
 }
